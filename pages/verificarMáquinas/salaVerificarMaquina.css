@@ -21,10 +21,12 @@ form {
   margin: 0 auto;
   width: 90%;
   max-width: 350px;
+  /* max-height: 600px;
+  overflow: auto; */
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 form label {
   position: relative;
@@ -61,6 +63,17 @@ form button:active {
   opacity: 0.7;
 }
 
+section.maquina-utilizada {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
 form section label {
   position: static;
 }
@@ -90,7 +103,6 @@ div.error {
   background-color: rgba(255, 0, 0, 0.199);
   color: red;
 }
-
 div.satisfactorio {
   text-align: center;
   padding: 1rem;
