@@ -28,16 +28,10 @@ session_start();
                 </ul>
             </nav>
         </header>
-    <?php elseif(isset($_SESSION["cedula"]) && $_SESSION["rol"] == "estudiante"):?>
-        <header>
-            <a href="./index.php" class="title"><h1>LogMaster <span>for <?= $_SESSION["rol"]?></span></h1></a>
-            <nav>
-                <ul>
-                    <li><a href="../verFaltas/verFaltas.php">Ver faltas</a></li>
-                    <li><a href="../../cerrarSesion.php">Cerrar Sesión</a></li>
-                </ul>
-            </nav>
-        </header>
+    <?php elseif($_SESSION["rol"] == "estudiante"):?>
+        <?php
+            header("Location: ../../index.php");    
+        ?>  
 
     <?php else:?>
         <?php

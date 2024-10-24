@@ -29,9 +29,14 @@
                 </ul>
             </nav>
         </header>
+    
+    <?php elseif($_SESSION["rol"] == "estudiante"):?>
+        <?php
+            header("Location: ../../index.php");
+        ?>
     <?php else:?>
         <?php
-                header("Location: login/login.php");    
+            header("Location: login/login.php");    
         ?>
     <?php endif?>
 

@@ -43,7 +43,8 @@ a.title {
   text-decoration: none;
   color: black;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) {
   header {
     flex-direction: row;
     justify-content: space-between;
